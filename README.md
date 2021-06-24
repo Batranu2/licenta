@@ -1,2 +1,2 @@
 # licenta
-plm
+Licenta
