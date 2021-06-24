@@ -83,12 +83,3 @@ nb-configuration.xml
 ##############################
 .DS_Store
 Arduino_Data/src/main/java/flore/cristi/project/configuration/AccountKey.json
-Arduino_Data/AccountKey.json
-Arduino_Data/AccountKey.json
-Arduino_Data/src/main/java/flore/cristi/project/configuration/FBConfig.java
-Arduino_Data/AccountKey.json
-Arduino_Data/src/main/java/flore/cristi/project/configuration/FBConfig.java
-Arduino_Data/target/classes/flore/cristi/project/configuration/FBConfig.class
-Arduino_Data/target/classes/flore/cristi/project/controller/ClothesController.class
-Arduino_Data/AccountKey.json
-Arduino_Data/AccountKey.json
