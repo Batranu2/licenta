@@ -14,7 +14,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class GenericRepo {
-    public <T> T getEntityByUid(String uid, DatabaseReference database, Class<T> classType) throws InterruptedException {
+    public <T> T getEntityByUid(
+            String uid, DatabaseReference database, Class<T> classType) throws InterruptedException {
         final CountDownLatch latch = new CountDownLatch(1);
         final AtomicReference<Object> val = new AtomicReference<>(null);
         final AtomicReference<Exception> exceptionAtomicReference = new AtomicReference<>(null);

@@ -3,8 +3,8 @@ package flore.cristi.project.model.entity;
 public class ClothesEntity {
 
     private String uid;
-    private Season anotimp;
-    private Material material;
+    public Season anotimp;
+    public Material material;
     private ClothesType tip_haina;
     private String color;
 

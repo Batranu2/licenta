@@ -15,7 +15,7 @@ public class ClothesService {
     private final GenericRepo repo;
     final String CLOTHES_TABLE = "Clothes";
 
-    public ClothesService(GenericRepo repo) {
+    public ClothesService(GenericRepo repo ) {
         this.repo = repo;
     }
 
