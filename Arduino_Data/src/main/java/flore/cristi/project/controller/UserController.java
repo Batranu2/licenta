@@ -22,6 +22,8 @@ public class UserController {
         return userService.login(uid);
     }
 
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/api/users")
     public List<UID> getAllUsers() throws InterruptedException {
         return userService.getAllUsers();

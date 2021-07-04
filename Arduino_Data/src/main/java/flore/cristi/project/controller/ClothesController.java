@@ -27,27 +27,34 @@ public class ClothesController {
     }*/
 
 
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @PutMapping("/save-clothes")
     public void saveCloth(@RequestBody ClothesEntity clothesEntity) {
         clothesService.saveCloth(clothesEntity);
     }
 
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/clothes/{uid}")
     public ClothesEntity getClothes(@PathVariable("uid") String uid) throws InterruptedException {
         return clothesService.getClothByUid(uid);
     }
 
+
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/clothes-type/{tip}")
     public List<ClothesEntity> getClothesByType(@PathVariable("tip") String type) throws InterruptedException {
         return clothesService.getClothesByType(ClothesType.valueOf(type));
     }
 
-    @GetMapping("/clothes")
+
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("/api/clothes")
     public List<ClothesEntity> getAllClothes() throws InterruptedException {
         return clothesService.getAllClothes();
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @DeleteMapping("/clothes/remove/{uid}")
     public void removeClothes(@PathVariable("uid") String uid) {
         clothesService.deleteCloth(uid);
